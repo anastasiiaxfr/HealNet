@@ -46,12 +46,12 @@ const { id, data, slug = "/blog", date = true, book = false } = Astro.props;
       <p class="mb-6 text-sm sm:text-base">{data.description}</p>
 
       <button
-        class="btn bg-main-200 border-main text-white rounded-lg hover:bg-blue-600 w-full mt-auto"
+        class="btn btn-outline border-2 border-main-200 text-main-200  rounded-lg hover:bg-main-200 hover:text-white w-full mt-auto"
       >
         Read more
         <ChevronRight size={16} />
       </button>
     </a>
-	{book && <a href="#" class="mt-5 btn bg-[linear-gradient(125deg,var(--color-main-100),var(--color-main-200))] text-white border-0 shadow-xl hover:shadow-2xl w-full">Book an appointment <ChevronRight /></a>}
+	{book && <a href="#" class="mt-5 btn bg-[linear-gradient(125deg,var(--color-main-100),var(--color-main-200))] text-white border-0 shadow-xl hover:shadow-2xl w-full">Book an appointment</a>}
   </div>
 </article>
